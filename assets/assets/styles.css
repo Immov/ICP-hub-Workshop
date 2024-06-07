@@ -1,0 +1,128 @@
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section h2 {
+	text-align: center;
+}
+
+.project {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.project img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+form input,
+form textarea,
+form button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+form button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* Add hover animation for navbar buttons */
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	position: relative; /* Add relative positioning */
+}
+
+nav ul li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+/* Add cool animation effects */
+.project {
+	margin-top: 30px;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+	transform: translateY(-5px);
+}
+
+.project img {
+	max-width: 100%;
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+	transform: scale(1.05);
+}
